@@ -1,0 +1,50 @@
+<h2>
+  Update Fichier Properties Developpement:
+</h2>
+  <br>
+
+
+
+
+  <form (ngSubmit) = "onSubmit()">
+
+    <div>
+      <label>server Port:</label>
+
+      <input type="text" class ="form-control" id = "server.port"
+      [(ngModel)]= "source['server.port']" name ="serverport">
+
+      <br>
+    </div>
+
+    <div>
+      <label>spring.datasource.password:</label>
+      <input type="text" class ="form-control" id = "spring.datasource.password"
+      [(ngModel)] = "source['spring.datasource.password']" name = "spring.datasource.password">
+      <br>
+    </div>
+
+    <div>
+      <label>spring.datasource.url:</label>
+      <input type="text" class ="form-control" id = "spring.datasource.url"
+      [(ngModel)] = "source['spring.datasource.url']" name = "spring.datasource.url">
+      <br>
+    </div>
+
+    <div>
+      <label>spring.datasource.username:</label>
+      <input type="text" class ="form-control" id = "spring.datasource.username"
+      [(ngModel)] = "source['spring.datasource.username']" name = "spring.datasource.username">
+      <br>
+    </div>
+
+    <div>
+      <label>spring.jpa.hibernate.ddl-auto:</label>
+      <input type="text" class ="form-control" id = "spring.jpa.hibernate.ddl-auto"
+      [(ngModel)] = "source['spring.jpa.hibernate.ddl-auto']" name = "spring.jpa.hibernate.ddl-auto">
+      <br>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
